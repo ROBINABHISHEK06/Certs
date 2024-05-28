@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Calibri';
+    src: url('https://fonts.gstatic.com/s/calibri/v7/85L48Z0fAKQe-QFlRhPhszRP.woff2') format('woff2');
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: 'Calibri', sans-serif;
+}
+.a4-paper {
+    width: 595pt;
+    height: 842pt;
+    background-color: white !important;
+    background: url('stripes_watermarkbgr.png') no-repeat center 160px;
+    background-size: 110% 100%;
+    position: relative;
+    padding: 3cm;
+    padding-bottom: 5cm; /* Adjust this value to create enough space at the bottom */
+    box-sizing: border-box;
+}
+.a4-paper::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    border-left: 4px solid black;
+}
+.a4-paper::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    right: 45px;
+    bottom: 45px;
+    border: 1px solid black;
+}
+.content {
+    font-size: 12pt;
+    color: black;
+    text-align: left;
+}
+.header, .topics, .footer {
+    margin-bottom: 20px;
+}
+.header {
+    position: relative;
+    margin-top: 70px;
+}
+
+.header p{
+    text-align: right;
+    margin-bottom: 5px;
+}
+.signature-section {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    font-size: 12pt;
+    position: absolute;
+    bottom: 200px; /* Adjust this value as needed */
+    width: calc(100% - 7cm); /* Adjusted to account for the padding */
+}
+.signaturec, .signaturev {
+    margin-left: 50px; /* Adjust this value to set the space between the signatures */
+}
+.footer-italic {
+    font-style: italic;
+    text-align: center;
+    font-size: 10pt;
+    position: absolute;
+    bottom: 95px; /* Adjust this value as needed */
+    width: 100%;
+    left: 0;
+}
+.footer-issued {
+    font-size: 12pt;
+    position: absolute;
+    bottom: 150px; /* Adjust this value as needed */
+    width: 100%;
+}
+.date {
+    font-size: 12pt;
+    position: absolute;
+    bottom: 450px; /* Adjust this value as needed */
+    width: 100%;
+}
+.photo {
+    width: 140px; /* Smaller width */
+    height: 150px; /* Smaller height */
+}
+.list {
+    align-items: center;
+    font-weight: bold;
+    font-size: 12pt;
+    position: absolute;
+    bottom: 500px; /* Adjust this value as needed */
+    width: 100%;
+    left: 11%;
+}
+.head {
+    font-size: 12pt;
+    position: absolute;
+    bottom: 680px; /* Adjust this value as needed */
+    width: 100%;
+}
+.name {
+    font-size: 14pt;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 540px;
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+height: 71px;
+margin-top: 17px;
+}
+.logo {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px; /* Adjust the width as needed */
+    height: 80px;
+}
+.contact-info {
+    text-align: center;
+    font-size: 8pt;
+    position: absolute;
+    bottom: 50px; /* Adjust this value as needed */
+    width: 100%;
+    left: 0;
+}
+.photo-container {
+    position: absolute;
+    bottom: 240px; /* Adjust this value as needed */
+    width: 100%;
+}
